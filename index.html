@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CK Charity Foundation Limited</title>
+    <style>
+        :root {
+            --primary: #2c5e50;
+            --secondary: #eef5f3;
+            --accent: #d4a373;
+            --text: #333333;
+            --light: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1e3f35;
+            flex-wrap: wrap;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: var(--light);
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        nav button:hover, nav button.active {
+            background-color: var(--accent);
+            color: var(--text);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .tab-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .tab-content.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .card {
+            background-color: var(--secondary);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid var(--accent);
+            margin: 1rem 0;
+            padding-left: 1rem;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--secondary);
+            color: #666;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        /* Highlight boxes for target audiences */
+        .highlight-box {
+            background: #fff;
+            border: 2px dashed var(--accent);
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CK Charity Foundation Limited</h1>
+        <p>Serving Hong Kong with Love and Purpose[cite: 1]</p>
+    </header>
+
+    <nav>
+        <button class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
+        <button class="tab-btn" onclick="openTab(event, 'about')">About Us</button>
+        <button class="tab-btn" onclick="openTab(event, 'initiatives')">Initiatives</button>
+        <button class="tab-btn" onclick="openTab(event, 'contact')">Work With Us</button>
+    </nav>
+
+    <main>
+        <!-- Home Tab -->
+        <div id="home" class="tab-content active">
+            <div class="card">
+                <h2>Welcome</h2>
+                <p>We are a group of Hong Kongers who have been deeply blessed by this city. Rooted in the teachings of Christ, we seek to deliver a message of love through practical service—empowering the vulnerable, serving our seniors, and building a more cohesive community[cite: 1].</p>
+                <blockquote>Matthew 25:40 states, "Truly I tell you, whatever you did for one of the least of these brothers and sisters of mine, you did for me[cite: 1]."</blockquote>
+            </div>
+        </div>
+
+        <!-- About Tab -->
+        <div id="about" class="tab-content">
+            <div class="card">
+                <h2>Our Story & Founders</h2>
+                <p>CK Charity Foundation was born out of gratitude. Our founding team brings together a unique blend of professional expertise[cite: 1]:</p>
+                <ul>
+                    <li><strong>Financial Background:</strong> Understanding financial literacy and tackling the trap of financial insecurity[cite: 1].</li>
+                    <li><strong>Education Background:</strong> Knowing how transformative learning can be beyond textbooks[cite: 1].</li>
+                    <li><strong>Dental & Healthcare Background:</strong> Recognizing the critical link between health, dignity, and quality of life[cite: 1].</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Initiatives Tab -->
+        <div id="initiatives" class="tab-content">
+            <div class="card">
+                <h2>What We Do</h2>
+                
+                <h3>1. Financial Literacy (For Teens & Young Adults)</h3>
+                <p>Many young people and low-income families struggle with money management because it isn't taught in standard schools. We offer practical tools[cite: 1]:</p>
+                <div class="highlight-box">
+                    <ul>
+                        <li>Workshops on budgeting, saving, and avoiding predatory lending[cite: 1].</li>
+                        <li>Mentorship for at-risk youth facing financial stress and social isolation[cite: 1].</li>
+                        <li>Teaching the ethics of wealth and generosity[cite: 1].</li>
+                    </ul>
+                </div>
+
+                <h3 style="margin-top: 2rem;">2. Focus on Dementia & Brain Health (For Parents & Caregivers)</h3>
+                <p>Most dementia families rely on a caregiver network sharing the load, yet conventional systems often fail to recognize caregiver needs[cite: 1]. We provide[cite: 1]:</p>
+                <div class="highlight-box">
+                    <ul>
+                        <li>Caregiver support: respite services, training, and emotional support networks[cite: 1].</li>
+                        <li>Educational workshops on brain health, early detection, and reducing stigma[cite: 1].</li>
+                        <li>Support groups and exploring the link between oral health and cognitive decline[cite: 1].</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Tab -->
+        <div id="contact" class="tab-content">
+            <div class="card">
+                <h2>Partner with Us</h2>
+                <p>Whether you want to volunteer, partner as an organization, or donate to support our programs for teens and seniors, we would love to hear from you[cite: 1].</p>
+                <ul>
+                    <li><strong>Volunteer:</strong> Teach a financial class, visit a senior, or help with administrative tasks[cite: 1].</li>
+                    <li><strong>Partners:</strong> Churches, charity institutions, educational bodies, and corporations[cite: 1].</li>
+                </ul>
+                <p><strong>Contact:</strong> [Insert Email Address] | [Insert Phone Number][cite: 1]</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CK Charity Foundation Limited. All rights reserved[cite: 1].</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            const currentTab = document.getElementById(tabName);
+            currentTab.classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
